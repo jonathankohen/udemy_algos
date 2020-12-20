@@ -1,12 +1,83 @@
-splice()
-    - inserts, replaces, or removes values at given index
-    - (starting index, # of values to remove, new value(optional))
-    - (1, 0, "ex") inserts ex at 1
-    - (4, 1, "ex") replaces value at index 4
-    - (1, 1) removes value at index 1 
-split()
-join()
-indexOf()
+STRINGS
+.concat([separator], string)
+    concatinates strings with optional separator
 
-for of loop: loops over every value in an array or string. create placeholder to represent each element
-for in loop: loops over objects
+.charAt(index)
+    string.charAt(index) = char
+
+.substring(start[, end])
+    .substring(1,2) = just char at index 1
+    .substring(5) = whole string from start index onward
+
+.split(start[, end]) 
+    .split(' ') = splits into words
+    .split('') = splits into chars
+    .split() = arr of string
+
+.join() 
+    let arr = [ex, ex, ex]
+    arr.join() = "ex,ex,ex"
+    arr.join('') = "exexex"
+    arr.join('-'') = "ex-ex-ex"
+
+.reverse()
+    reverses arr in place.
+    let arr = [1,2,3]
+    arr.reverse() = [3,2,1]
+
+
+ARRS
+.splice(start, deleteCount [, new value]) 
+    splice(0, 1) = removes first item
+    splice(1, 0, "ex") = inserts ex at 1
+    splice(4, 1, "ex") = replaces value at index 4
+
+.slice()
+    .slice(2) = copies list from and including index 2
+    .slice(2, 4) = copies arr from and including index 2. ends not including end index
+
+.indexOf(item) 
+    .indexOf("apple") = index of item in arr
+
+.includes(item)
+    .includes("tommy") = true or false
+
+.filter(callback)
+    ages = [32,42,17]
+    checkAdult(age) return age >= 18
+    ages.filter(checkAdult) = returns newArr meeting criteria of function, doesn't change OG arr
+
+.map(currVal => callback)
+    const arr = [1,2,3,4]
+    arr.map(x => x * 2) = [2,4,6,8]
+
+.reduce(callback[, initialValue])
+    const arr = [1,2,3,4]
+    const reducer = (accumulator, currentVal) => accumulator + currentVal
+    arr.reduce(reducer) = 10. adding em all together
+    arr.reduce(reducer, 5) = 15. adding em all together, but starting with 5
+
+.sort()
+    sorts in alphabetical or ordered by the first digit in num
+    let arr = [b,c,a]
+    arr.sort() = [a,b,c]
+    let arr = [1,30,100,200]
+    arr.sort() = [1,100,200,30]
+
+
+NUMBERS
+.parseInt
+    .parseInt("10") = 10
+    .parseInt("10 20 30") = 10
+    
+.valueOf
+    num.valueOf() = primitive value
+
+Math.pow(base, exponent)
+    Math.pow(2, 5) = 32
+
+Math.round(num)
+    Math.round(5.5) = 6
+
+Math.sqrt(num)
+    Math.sqrt(49) = 7
