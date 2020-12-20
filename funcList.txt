@@ -1,0 +1,12 @@
+splice()
+    - inserts, replaces, or removes values at given index
+    - (starting index, # of values to remove, new value(optional))
+    - (1, 0, "ex") inserts ex at 1
+    - (4, 1, "ex") replaces value at index 4
+    - (1, 1) removes value at index 1 
+split()
+join()
+indexOf()
+
+for of loop: loops over every value in an array or string. create placeholder to represent each element
+for in loop: loops over objects

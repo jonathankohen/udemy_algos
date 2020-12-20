@@ -1,0 +1,50 @@
+Print 1-255
+Print odd numbers from 1 to 1000
+Print sum of odd numbers from 1 to 5000. answer = 625,000
+Reverse string / check if palindrome
+Return amount of times certain char is in string
+
+Arrays:
+Iterate & print
+Find max
+Find average
+Create array of odd numbers of 1 - 255
+Returns the number of values greater than a given key
+Square all the values of a given array
+Replace negative values with 0
+Replace negative values with strings
+Max, min, average
+Shift values over by 1
+Create array with 10 random values that are between 1 and 100
+Swap first and last values
+Create array that takes in index and value and inserts it into array
+Check frequency of given key in array
+Check if arr1 has values of arr2 ** 2
+Check frequency of given key in arr
+Reverse
+Removing negatives with only pop()
+
+Recursion:
+Sum. Ex/  function(3) = 1 + 2 + 3
+Factorial. Ex/ function(3) = 3 * 2 * 1
+Fibonacci sequence
+Binary search
+
+Sorts:
+Bubble sort
+Selection sort
+Insertion sort
+Merge sort
+Quick sort
+
+Data structures:
+Stack
+Queue
+Singly Linked Lists
+Merge sorting a singly linked list
+Binary search trees
+Hash tables
+Trie
+Dictionary
+Min Heaps
+Hash maps
