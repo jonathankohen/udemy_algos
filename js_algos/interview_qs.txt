@@ -1,0 +1,58 @@
+what is functional programming?
+    - not object oriented programming
+    - try not to change global vars. change info within the scope of functions, and return it with functions. doesn't alter original
+    - .map() is a functional paradigm. returns a new array. OG array is never altered
+
+what is OOP?
+    - object oriented programming. four pillars: encapsulation, inheritance, abstraction, polymorphism
+    ~ encapsulation: data is contained within classes, variables, etc. that outside code cannot access
+    ~ inheritance: Inheriting from parent class passing properties. DRY, don't repeat yourself
+    ~ abstraction: normal def
+    ~ polymorphism: constructors. taking the same methods, and getting something different. splice() can have 1,2, or 3 arguments. but it does the same thing
+
+what are the three diff kinds of scoping in js?
+    - block, global, functional
+    - var goes to the top of the funct. hoisting. classes do not get hoisted. need to write it at the top of the file
+    - let stays within the block of the if statement, for example
+
+what is mongodb?
+    - NoSQL db
+    - no relationships
+    - less structure, but can scale quickly
+    - retrieves info incredibly fast, but db can't be too complicated
+
+in functional components, do we have access to state?
+    - no, use hooks. useState()
+
+what is state?
+    - where data lives in app, can change based on user interaction
+    - creates a better exp for the user, helps devs do that
+    - it's the heartbeat. everything else dances around it
+
+how does data flow in react?
+    - data flows down; put state in common parent file
+
+is there a way for the children to manipulate the state?
+    - yes, by passing a method into a prop
+
+is there one way to structure your react app?
+    - nooooo, that's the biggest hurdle. multiple design patterns
+
+can we reuse components? what's the benefit?
+    - yes, keep it DRY
+
+what are props?
+    - vars passed down to components to make them dynamic
+    - children components cannot change props. they are read-only
+
+what happens to the DOM whenever we update state?
+    - component gets rerendered
+
+lifecycle methods?
+    - mounting, unmounting, updating. all based around state
+    - the methods are not available, but the outcome is. useEffect. dependency array, which needs to be empty
+
+what are synthetic events in js?
+    - onClick, onChange, onMouseOver, etc.
+    - react has to bypass a lot of automatic js actions. that's why they are used. they do the same thing
+

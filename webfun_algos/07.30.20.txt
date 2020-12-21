@@ -1,0 +1,178 @@
+// <!--~ Math -->
+
+Math.random();
+// 0 -1, but never gets to 1
+
+Math.ceil(0.5);
+// ceiling. rounds up from 0.5 to 1
+// -0.5 ceiling would be 0
+
+Math.floor(0.5);
+// rounds down to 0
+
+Math.trunc();
+// removes decimals
+
+let rand = Math.ceil(Math.random() * 6);
+// or
+rand = Math.ceil(rand);
+
+Math.round();
+// rounds
+
+// <!--~ Roll die -->
+
+rollOne = () => {
+    let rand = Math.random() * 6;
+    rand = Math.ceil(rand);
+    return rand;
+};
+
+playFives = (num) => {
+    for (let i = 0; i <= num; i++) {
+        let roll = rollOne();
+        if (roll == 5) {
+            console.log("That's good luck!");
+        }
+    }
+};
+
+// 3) Third, create a new function named playStatistics(), which should call rollOne() eight
+// times (but not print anything after each call). After thelast of these eight calls, it should print out
+// the lowest and highest valuesthat it received from rollOne, among those eight calls.
+
+rollOne = () => {
+    console.log('Rolling...');
+    let rand = Math.random() * 6;
+    rand = Math.ceil(rand);
+    return rand;
+};
+
+playStats = () => {
+    let min = 6;
+    let max = 0;
+
+    for (let i = 0; i < 8; i++) {
+        let roll = rollOne();
+        roll;
+
+        if (roll < min) {
+            min = roll;
+        }
+
+        if (roll > max) {
+            max = roll;
+        }
+    }
+    console.log(`Roll Stats: Lowest = ${min}, Highest = ${max}`);
+};
+
+playStats();
+
+// // 4) Fourth, make a copy of playStatistics and add code to make
+// playStatistics2(), so // that at the end (in addition to printing high/low
+// rolls), it also prints the total sum of all eight rolls.
+
+rollOne = () => {
+    console.log('Rolling...');
+    let rand = Math.random() * 6;
+    rand = Math.ceil(rand);
+    return rand;
+};
+
+playStats2 = () => {
+    let min = 6;
+    let max = 0;
+    let sum = 0;
+
+    for (let i = 0; i < 8; i++) {
+        let roll = rollOne();
+        roll;
+
+        if (roll < min) {
+            min = roll;
+        }
+
+        if (roll > max) {
+            max = roll;
+        }
+        sum += roll;
+    }
+    console.log(`Min: ${min}, Max: ${max}, Sum: ${sum}`);
+};
+
+playStats2();
+
+// // 5) Fifth, copy playStatistics2 and add code to it to make
+// playStatistics3(num), so that // it will roll as many times as you want, instead
+// of always doing this eight times.
+
+rollOne = () => {
+    console.log('Rolling...');
+    let rand = Math.random() * 6;
+    rand = Math.ceil(rand);
+    return rand;
+};
+
+playStats3 = (num) => {
+    let min = 6;
+    let max = 0;
+    let sum = 0;
+
+    for (let i = 0; i < num; i++) {
+        let roll = rollOne();
+        roll;
+
+        if (roll < min) {
+            min = roll;
+        }
+
+        if (roll > max) {
+            max = roll;
+        }
+        sum += roll;
+    }
+    console.log(`Min: ${min}, Max: ${max}, Sum: ${sum}`);
+};
+
+playStats3();
+
+// // 6) Finally, make a copy of playStatistics3 and change it to create
+// playStatistics4(num), // so that at the end instead of the total sum, it prints
+// the average roll.
+
+rollOne = () => {
+    console.log('Rolling...');
+    let rand = Math.random() * 6;
+    rand = Math.ceil(rand);
+    return rand;
+};
+
+playStats4 = (num) => {
+    let min = 6;
+    let max = 0;
+    let sum = 0;
+
+    for (let i = 0; i < num; i++) {
+        let roll = rollOne();
+        roll;
+
+        if (roll < min) {
+            min = roll;
+        }
+
+        if (roll > max) {
+            max = roll;
+        }
+        sum += roll;
+    }
+    avg = sum / num;
+    console.log(`Min: ${min}, Max: ${max}, Avg: ${avg}`);
+};
+
+playStats4();
+
+// //  Statistics Until Doubles // Here’s another game for our New Year’s Eve
+// party. Implement a ’20-sided die’ that randomly returns // integers between 1
+// and 20 inclusive. Roll these, tracking statistics until you get a value twice in
+// a row. // Display number of rolls, min, max, and average.
